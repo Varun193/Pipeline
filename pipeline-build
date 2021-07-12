@@ -1,0 +1,14 @@
+#!groovy
+
+pipeline{
+agents any
+stages{
+stage('git scm'){
+steps{
+script{
+git 'https://github.com/Varun193/QA-selenium'
+}
+}
+}
+}
+}
